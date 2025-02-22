@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./img/favicon_fotogram.png" />
+  <title>Your Fotogram</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./script.js" defer></script>
+</head>
+
+<body onload="init()">
+  <div class="page-container">
+    <header>
+      <img class="logo" src="./img/logo_fotogram.svg" alt="Fotogram Logo">
+    </header>
+
+    <div id="overlay" class="overlay d_none" onclick="switchOffOverlay()">
+      <div class="dialog" id="dialog" onclick="bubblingPropagation(event)">
+
+      </div>
+    </div>
+
+    <main>
+      <h1>Your personal photo album</h1>
+      <div id="fotogramMain" class="fotogram"></div>
+    </main>
+
+    <footer>
+      &copy; 2025 Stefan Heller
+    </footer>
+
+  </div>
+</body>
+
+</html>
